@@ -32,11 +32,5 @@ fun NoteEditScreen(viewModel: NotesViewModel = viewModel(), innerPadding: Paddin
             label = { Text("Текст заметки") },
             modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp)
         )
-//        Button(
-//            onClick = { viewModel.saveCurrentNote() },
-//            modifier = Modifier.align(Alignment.End)
-//        ) {
-//            Text("Сохранить")
-//        }
     }
 }

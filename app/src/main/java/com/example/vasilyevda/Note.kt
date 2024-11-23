@@ -1,9 +1,11 @@
 package com.example.vasilyevda
 
-import java.util.UUID
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
+@Entity(tableName = "notes")
 data class Note(
-    val id: String = UUID.randomUUID().toString(),
-    var title: String = "",
-    var text: String = ""
+    @PrimaryKey(autoGenerate = true) val id: Long? = null, // Опциональное поле id
+    val title: String,
+    val text: String
 )
